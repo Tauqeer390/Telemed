@@ -86,7 +86,7 @@ export default function Header() {
 
                         <div class="header-contact-detail ">
                             <p class="contact-header">Contact</p>
-                            <p class="contact-info-header fw-bold">+91 9653682623</p>
+                            <p class="contact-info-header fw-bold">+92 3097149772</p>
                         </div>
                         </Nav.Link>
                    

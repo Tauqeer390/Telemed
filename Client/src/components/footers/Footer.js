@@ -60,15 +60,15 @@ export default function Footer() {
                                 <div class="footer-contact-info">
                                     <div class="footer-address">
                                         <span><i class="fas fa-map-marker-alt"></i></span>
-                                        <p> Thane <br/> Maharashtra, India </p>
+                                        <p> E11/1 <br/> Islamabad, Pakistan </p>
                                     </div>
                                     <p>
                                         <i class="fas fa-phone-alt"></i>
-                                        +91 9653682623
+                                        +92 3097149772
                                     </p>
                                     <p class="mb-0">
                                         <i class="fas fa-envelope"></i>
-                                        doccure@gmail.com
+                                        telemed@gmail.com
                                     </p>
                                 </div>
                             </div>
