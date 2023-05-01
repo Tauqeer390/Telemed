@@ -55,7 +55,7 @@ app.use('/admin_route',AdminRoutes)
 app.use('/sendmail',MailRoute)
 app.use('/pdfupload',PdfRoute)
 
-const uri = 'mongodb+srv://shreyash2704:shreyash2704@cluster0.3uuye.mongodb.net/doccure?retryWrites=true&w=majority'
+const uri = 'mongodb+srv://arn3870:clusterPass123@cluster0.ihbdbk5.mongodb.net/test'
 mongoose.connect(uri,{
     useNewUrlParser:true,
     useUnifiedTopology:true,

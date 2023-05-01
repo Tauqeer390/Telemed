@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const Patient = require("../model/patient");
 const Doctor = require("../model/doctor");
 const Admin = require("../model/admin");
-const Lab = require('../model/lab')
+const Lab = require('../model/lab');
 
 exports.patientAuth = async (req, res, next) => {
     try {
