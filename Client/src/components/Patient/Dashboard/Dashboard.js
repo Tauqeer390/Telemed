@@ -9,7 +9,6 @@ import Profile_setting from './Profile_setting'
 import axios from 'axios'
 import ChangePassword from './ChangePassword'
 import ChatSection from './ChatSection'
-import Lab_Appointment from './Lab_Appointment'
 export default function Dashboard() {
 	const state = {
 		fname:"",
@@ -83,7 +82,7 @@ export default function Dashboard() {
 	}
 	const toggleNavigation = (ele) => {
 		var ele = parseInt(ele)
-		var array = ['d_dashboard','d_chat','d_setting','d_lab','d_changePass']
+		var array = ['d_dashboard','d_chat','d_setting','d_changePass']
 		for(var i=0;i<array.length;i++){
 			if(i == ele-1){
 				document.getElementById(array[i]).setAttribute('class','col-md-7 col-lg-8 col-xl-9')
@@ -179,12 +178,7 @@ export default function Dashboard() {
 													<span>Profile Settings</span>
 												</a>
 											</li>
-											<li onClick={() => toggleNavigation(4)}>
-												<a href="#" >
-													<i class="fas fa-user-cog"></i>
-													<span>Lab Appointments</span>
-												</a>
-											</li>
+											
 											<li>
 												<a href="#"onClick={() => toggleNavigation(5)}>
 													<i class="fas fa-lock"></i>
@@ -354,12 +348,7 @@ export default function Dashboard() {
 							<ChatSection />
 
 						</div>
-						{/*----------------------Chat section--------------------------------------*/}
-						<div id="d_lab" className="d-none">
-							
-							<Lab_Appointment />
-
-						</div>
+		
 						{/*----------------------Chang Password section--------------------------------------*/}
 						<div id="d_changePass" className='d-none'>
                              <ChangePassword />

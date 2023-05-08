@@ -72,8 +72,6 @@ export default function Header() {
                     <NavDropdown.Item href="/admin/doctor">All Doctor</NavDropdown.Item>
                     <NavDropdown.Item href="/admin/patient">All Patients</NavDropdown.Item>
                     <NavDropdown.Item href="/admin/appointment">All Appointments</NavDropdown.Item>
-                    <NavDropdown.Item href="/admin/labs">All Labs</NavDropdown.Item>
-                    <NavDropdown.Item href="/admin/labappointment">All Lab Appointments</NavDropdown.Item>
                     <NavDropdown.Item href="/logout">Logout</NavDropdown.Item>
                 </NavDropdown>
                 

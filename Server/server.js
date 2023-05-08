@@ -54,7 +54,6 @@ app.use('/lab_appointment',LabAppointmentRoute)
 app.use('/admin_route',AdminRoutes)
 app.use('/sendmail',MailRoute)
 app.use('/pdfupload',PdfRoute)
-
 const uri = 'mongodb+srv://arn3870:clusterPass123@cluster0.ihbdbk5.mongodb.net/test'
 mongoose.connect(uri,{
     useNewUrlParser:true,

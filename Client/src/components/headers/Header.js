@@ -31,10 +31,7 @@ export default function Header() {
                     <NavDropdown.Item  className=' text-dark' href="/login">Doctor Login</NavDropdown.Item>
                 </NavDropdown>
                 
-                <NavDropdown title="Lab Test" className='fs-6  text-dark' id="collasible-nav-dropdown">
-                    <NavDropdown.Item  className=' text-dark' href="/signup/lab">Register</NavDropdown.Item>
-                    <NavDropdown.Item  className=' text-dark' href="/login">Login </NavDropdown.Item>
-                </NavDropdown></>
+               </>
                 :
                 localStorage.getItem("userGroup") === "1" ? 
                     ""
@@ -45,7 +42,6 @@ export default function Header() {
                     </>
                     
                 }
-                {localStorage.getItem("userGroup") === "2" && <Nav.Link href="/Lab" className='fs-6  text-dark'>Lab</Nav.Link>}
                 </Nav>
 
                 <Nav className="ms-auto main-nav">
@@ -111,7 +107,6 @@ export default function Header() {
                                                     
                                         </div>
                                         <NavDropdown title="" className='fs-6 py-2' id="collasible-nav-dropdown">
-                                            <NavDropdown.Item href="/labDashboard">Dashboard</NavDropdown.Item>
                                             <NavDropdown.Item href="/logout">Logout</NavDropdown.Item>
                                         </NavDropdown>
                         </>):""

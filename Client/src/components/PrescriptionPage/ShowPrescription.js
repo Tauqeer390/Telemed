@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import logo from '../../assets/img/logo.png'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-// import Pdf from "react-to-pdf";
+import {Pdf} from 'react-to-pdf';
 
 const ref = React.createRef();
 const ShowPrescription = () => {
@@ -55,7 +55,7 @@ const ShowPrescription = () => {
 						</div>
 						<div className='col-md-1'>
 						<Pdf targetRef={ref} filename="prescription.pdf">
-	            	{({ toPdf }) => <button onClick={toPdf}>Download</button>}
+	            	{({toPdf}) => <button onClick={toPdf}>Download</button>}
 		             </Pdf>
 						</div>
 					</div>

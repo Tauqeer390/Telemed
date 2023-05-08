@@ -42,9 +42,7 @@ export default function Login() {
             if(user.usergroup === "2"){
                 uri = "http://localhost:5000/patients/login"
             }
-            if(user.usergroup === "3"){
-                uri = "http://localhost:5000/lab_appointment/login"
-            }
+        
             
 
             if(user.email !== "" && user.password !== ""){
@@ -109,7 +107,6 @@ export default function Login() {
                                             <option>Select User Group</option>
                                             <option value="1">Doctor</option>
                                             <option value="2">Patient</option>
-                                            <option value="3">Lab</option>
                                         </Form.Select>
                                         {error===""? "":<Alert variant="danger">
                                             {error}
